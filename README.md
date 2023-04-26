@@ -75,6 +75,10 @@ from IPython.display import Audio
 
 Audio(audio, rate=16000)
 ```
+<audio controls>
+  <source src="https://huggingface.co/datasets/sanchit-gandhi/audioldm-readme-samples/resolve/main/audioldm-s-full-v2-techno.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
 
 ## Tips
 
