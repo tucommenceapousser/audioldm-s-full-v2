@@ -17,15 +17,18 @@ is a text-to-audio _latent diffusion model (LDM)_ that learns continuous audio r
 latents. AudioLDM takes a text prompt as input and predicts the corresponding audio. It can generate text-conditional
 sound effects, human speech and music.
 
-This is the _small v2_ version of the AudioLDM model. The three AudioLDM checkpoints are summarised in the table below.
+# Checkpoint Details
 
-**Table 1:** Summary of the AudioLDM checkpoints. Frechet Distance (FD) indicates the similarity between generated samples and target samples, where lower is better.
+This is the **small v2** version of the AudioLDM model, which is the same size as the original AudioLDM small checkpoint, but trained for more steps. The four AudioLDM checkpoints are summarised below:
 
-| Checkpoint      | Training Data (h) | Training Steps | Params | Frechet Distance &#8595; |
-|-----------------|-------------------|----------------|--------|-------------------------------|
-| AudioLDM-S      | 137               | 0.6M           | 181M   | 29.48                         |
-| AudioLDM-L      | 137               | 0.6M           | 739M   | 27.12                         |
-| AudioLDM-L-Full | 9174              | 1.5M           | 739M   | **23.31**                     |
+**Table 1:** Summary of the AudioLDM checkpoints.
+
+| Checkpoint                                                            | Training Data (h) | Training Steps | Params |
+|-----------------------------------------------------------------------|-------------------|----------------|--------|
+| [audioldm-s-full](https://huggingface.co/cvssp/audioldm)              | 9174              | 1.5M           | 421M   |
+| [audioldm-s-full-v2](https://huggingface.co/cvssp/audioldm-s-full-v2) | 9174              | > 1.5M         | 421M   |
+| [audioldm-m-full](https://huggingface.co/cvssp/audioldm-m-full)       | 9174              | 1.5M           | 652M   |
+| [audioldm-l-full](https://huggingface.co/cvssp/audioldm-l-full)       | 9174              | 1.5M           | 975M   |
 
 ## Model Sources
 
