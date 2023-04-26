@@ -23,12 +23,12 @@ This is the **small v2** version of the AudioLDM model, which is the same size a
 
 **Table 1:** Summary of the AudioLDM checkpoints.
 
-| Checkpoint                                                            | Training Data (h) | Training Steps | Params |
-|-----------------------------------------------------------------------|-------------------|----------------|--------|
-| [audioldm-s-full](https://huggingface.co/cvssp/audioldm)              | 9174              | 1.5M           | 421M   |
-| [audioldm-s-full-v2](https://huggingface.co/cvssp/audioldm-s-full-v2) | 9174              | > 1.5M         | 421M   |
-| [audioldm-m-full](https://huggingface.co/cvssp/audioldm-m-full)       | 9174              | 1.5M           | 652M   |
-| [audioldm-l-full](https://huggingface.co/cvssp/audioldm-l-full)       | 9174              | 1.5M           | 975M   |
+| Checkpoint                                                            | Training Steps | Audio conditioning | CLAP audio dim | UNet dim | Params |
+|-----------------------------------------------------------------------|----------------|--------------------|----------------|----------|--------|
+| [audioldm-s-full](https://huggingface.co/cvssp/audioldm)              | 1.5M           | No                 | 768            | 128      | 421M   |
+| [audioldm-s-full-v2](https://huggingface.co/cvssp/audioldm-s-full-v2) | > 1.5M         | No                 | 768            | 128      | 421M   |
+| [audioldm-m-full](https://huggingface.co/cvssp/audioldm-m-full)       | 1.5M           | Yes                | 1024           | 192      | 652M   |
+| [audioldm-l-full](https://huggingface.co/cvssp/audioldm-l-full)       | 1.5M           | No                 | 768            | 256      | 975M   |
 
 ## Model Sources
 
